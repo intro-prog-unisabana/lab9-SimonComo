@@ -12,5 +12,3 @@ class Song:
 my_song = Song("bohemian rapsody", "queen", 5.55)
 print(my_song.get_length_in_seconds())
         
-
-    
