@@ -1,15 +1,15 @@
 # Write your code here!
 
 class Song:
-    def __init__(self, name, artist, length)
+    def __init__(self, name, artist, length):
         self.name = name
         self.artist = artist 
-        self.lenght = float(length)
+        self.length = float(length)
 
-    def get_length_in_seconds(self)
+    def get_length_in_seconds(self):
             return self.length * 60
         
-my_song = Song("bohemian rapsody", "queen", 5,55)
+my_song = Song("bohemian rapsody", "queen", 5.55)
 print(my_song.get_length_in_seconds())
         
 
