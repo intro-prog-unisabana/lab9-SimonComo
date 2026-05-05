@@ -1,40 +1,26 @@
 # Write your code here!
 # FREEZE CODE BEGIN
 class Movie:
-    def __init__(self, title, director, year):
+    def _init_(self, title, director, year):
         self.title = title
         self.director = director
         self.year = year
 # FREEZE CODE END
-    # TODO: Define the __str__ method!
-
-
-# FREEZE CODE BEGIN
-if __name__ == "__main__":
+    # TODO: Define the _str_ method!
+    def _str_(self):
+        return f"Movie: {self.title} (Directed by {self.director}, {self.year})"
+    
+    # FREEZE CODE BEGIN
+if _name_ == "_main_":
     # --- Main Program ---
     title = input("Enter the movie title: ")
     director = input("Enter the director's name: ")
     year = input("Enter the release year: ")
 # FREEZE CODE END
-    
+    year = int(year) 
+
     
     # TODO: Construct a Movie object!
     # TODO: Print the object!
-
-class Movie:
-    def __init__(self, title, director, year):
-        self.title = title
-        self.director = director
-        self.year = year
-
-    def __str__(self):
-        return f"Movie: {self.title} (Directed by {self.director}, {self.year})"
-
-
-# Crear objeto desde input
-title = input()
-director = input()
-year = int(input())
-
-movie = Movie(title, director, year)
-print(movie)
+    movie = Movie(title, director, year)
+    print(movie._str_())
